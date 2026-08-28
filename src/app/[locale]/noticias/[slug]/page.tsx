@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import { PortableText } from "@portabletext/react";
 import { useTranslations } from "next-intl";
 import type { Locale, Post } from "@/types/content";
@@ -7,6 +8,16 @@ import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
 import { getPostBySlug } from "@/sanity/lib/fetchers";
 
 export const dynamic = "force-dynamic";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string; slug: string }>;
+}): Promise<Metadata> {
+  const { locale, slug } = await params;
+  const post = await getPostBySlug(locale as Locale, slug);
+  return { title: post ? `${post.title} — CCH` : "CCH" };
+}
 
 export default async function ArticlePage({
   params,

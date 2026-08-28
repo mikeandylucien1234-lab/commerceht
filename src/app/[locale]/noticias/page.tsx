@@ -1,4 +1,6 @@
+import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import type { Locale, Post } from "@/types/content";
 import { PageHero } from "@/components/ui/PageHero";
 import { NewsList } from "@/components/news/NewsList";
@@ -6,6 +8,16 @@ import { getPosts } from "@/sanity/lib/fetchers";
 import { newsCategories } from "@/lib/placeholder-data";
 
 export const dynamic = "force-dynamic";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const tNav = await getTranslations({ locale, namespace: "nav" });
+  return { title: `${tNav("noticias")} — CCH` };
+}
 
 export default async function NoticiasPage({
   params,

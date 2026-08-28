@@ -1,8 +1,20 @@
+import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { PageHero } from "@/components/ui/PageHero";
 import { orgLinks } from "@/lib/placeholder-data";
 
 export const dynamic = "force-dynamic";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const tNav = await getTranslations({ locale, namespace: "nav" });
+  return { title: `${tNav("links")} — CCH` };
+}
 
 export default function LinksPage() {
   const t = useTranslations("links");

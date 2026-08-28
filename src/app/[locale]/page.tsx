@@ -1,4 +1,5 @@
-import { setRequestLocale } from "next-intl/server";
+import type { Metadata } from "next";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 import type { Locale } from "@/types/content";
 import {
   getSiteSettings,
@@ -17,6 +18,19 @@ import { DepartmentsGrid } from "@/components/home/DepartmentsGrid";
 import { ValuesGrid } from "@/components/home/ValuesGrid";
 
 export const dynamic = "force-dynamic";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "footer" });
+  return {
+    title: "CCH — Cámara Chileno-Haitiana de Comercio, Turismo e Industria",
+    description: t("tagline"),
+  };
+}
 
 export default async function HomePage({
   params,

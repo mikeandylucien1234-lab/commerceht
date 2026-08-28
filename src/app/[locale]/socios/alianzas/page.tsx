@@ -1,4 +1,6 @@
+import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import type { Alliance, Partner } from "@/types/content";
 import { PageHero } from "@/components/ui/PageHero";
 import { LogoGrid } from "@/components/partners/LogoGrid";
@@ -6,6 +8,16 @@ import { AllianceBlock } from "@/components/partners/AllianceBlock";
 import { getAlliances, getPartners } from "@/sanity/lib/fetchers";
 
 export const dynamic = "force-dynamic";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const tNav = await getTranslations({ locale, namespace: "nav" });
+  return { title: `${tNav("alianzas")} — CCH` };
+}
 
 export default async function AlianzasPage() {
   const [alliances, partners] = await Promise.all([

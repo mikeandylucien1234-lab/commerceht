@@ -1,10 +1,22 @@
+import type { Metadata } from "next";
 import { useTranslations, useLocale } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { PageHero } from "@/components/ui/PageHero";
 import { servicesList } from "@/lib/placeholder-data";
 import { t } from "@/types/content";
 import type { Locale } from "@/types/content";
 
 export const dynamic = "force-dynamic";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const tNav = await getTranslations({ locale, namespace: "nav" });
+  return { title: `${tNav("servicios")} — CCH` };
+}
 
 export default function ServiciosPage() {
   const tr = useTranslations("servicios");

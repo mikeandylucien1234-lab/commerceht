@@ -1,4 +1,6 @@
+import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { ContactForm } from "@/components/forms/ContactForm";
 import {
   FacebookIcon,
@@ -8,6 +10,16 @@ import {
 import { getSiteSettings } from "@/sanity/lib/fetchers";
 
 export const dynamic = "force-dynamic";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const tNav = await getTranslations({ locale, namespace: "nav" });
+  return { title: `${tNav("contacto")} — CCH` };
+}
 
 export default async function ContactoPage() {
   const settings = await getSiteSettings();
