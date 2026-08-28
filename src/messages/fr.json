@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "inicio": "Accueil",
+    "quienesSomos": "Qui sommes-nous",
+    "lacamara": "La Chambre",
+    "historia": "Histoire",
+    "equipo": "Équipe",
+    "servicios": "Services",
+    "socios": "Membres",
+    "nuestrosSocios": "Nos Membres",
+    "alianzas": "Partenariats",
+    "noticias": "Actualités",
+    "informacion": "Informations",
+    "documentos": "Documents",
+    "links": "Liens Utiles",
+    "contacto": "Contact"
+  },
+  "home": {
+    "pitchTitle": "La Chambre de Commerce Chilo-Haïtienne offre un espace unique pour la création d'affaires et l'identification d'opportunités commerciales, ainsi que divers avantages.",
+    "pitchSubtitle": "C'est une initiative puissante pour renforcer les relations, échanger des expériences et identifier les défis.",
+    "verServicios": "Voir les services",
+    "novedades": "Nouveautés et actualités",
+    "verTodo": "TOUT VOIR",
+    "verMas": "Voir plus",
+    "yearsBanner": "3 ans à créer des opportunités",
+    "experienceLabel": "Expérience",
+    "experienceTitle": "Une organisation avec un impact réel sur la communauté bilatérale",
+    "nuestrosSocios": "Nos membres",
+    "sociosEstrategicos": "Membres stratégiques",
+    "sociosLabel": "Membres",
+    "siguenos": "Suivez-nous",
+    "seguir": "Suivre",
+    "organizacionLabel": "Organisation",
+    "departamentos": "Nos départements",
+    "valores": "Nos valeurs"
+  },
+  "impact": {
+    "item1": "Soutient le commerce bilatéral et l'investissement dans les deux pays",
+    "item2": "Promeut le tourisme et l'échange culturel",
+    "item3": "Facilite le conseil, le réseautage et les alliances stratégiques",
+    "item4": "Représente ses membres auprès des entités publiques et privées",
+    "item5": "Encourage les projets de développement commercial et technologique",
+    "item6": "Fait partie de réseaux de coopération internationale (OEA, ONU Femmes)",
+    "item7": "Membre de Latinocámaras au Chili"
+  },
+  "values": {
+    "colaboracion": "Collaboration",
+    "crecimiento": "Croissance",
+    "diversidad": "Diversité",
+    "innovacion": "Innovation",
+    "confianza": "Confiance"
+  },
+  "lacamara": {
+    "kicker": "50 ans d'histoire",
+    "title": "Une institution au service du commerce bilatéral",
+    "p1": "La Chambre de Commerce, Tourisme et Industrie Chilo-Haïtienne est une institution avec 50 ans d'expérience dans la facilitation des relations commerciales entre le Chili et Haïti.",
+    "p2": "Notre mission est de renforcer les liens économiques et culturels entre les deux nations, en accompagnant les entrepreneurs et organisations avec du conseil, une représentation institutionnelle et un réseau de contacts consolidé au fil de cinq décennies.",
+    "comitesTitle": "Comités",
+    "comitesDesc": "Notre activité s'organise autour de comités thématiques, chacun axé sur un domaine clé pour le développement des relations bilatérales."
+  },
+  "historia": {
+    "intro": "Depuis 50 ans, la Chambre de Commerce, Tourisme et Industrie Chilo-Haïtienne accompagne le développement des relations bilatérales entre le Chili et Haïti, construisant un héritage de coopération et d'intégration économique.",
+    "premioLabel": "Reconnaissance",
+    "premioTitle": "Prix Barão do Rio Branco",
+    "premioDesc": "Depuis 21 ans, la Chambre décerne chaque année ce prix aux entreprises qui se distinguent par leur contribution au renforcement des relations commerciales et culturelles entre le Chili et Haïti."
+  },
+  "equipo": {
+    "liderazgo": "Direction",
+    "presidencia": "Présidence",
+    "directores": "Directeurs",
+    "gerencia": "Direction générale"
+  },
+  "servicios": {
+    "intro": "La Chambre de Commerce Chilo-Haïtienne offre un espace unique pour la création d'affaires et l'identification d'opportunités commerciales entre le Chili et Haïti.",
+    "banner": "Réseautage puissant • Missions commerciales • Comités"
+  },
+  "socios": {
+    "nivelPremium": "Niveau premium",
+    "platinum": "Membres Platinum",
+    "ccbc": "Membres CCBC",
+    "uneteLabel": "Rejoignez-nous",
+    "uneteTitle": "Devenez membre de la CCBC",
+    "uneteDesc": "Pour devenir membre et accéder à notre réseau de contacts, avantages et représentation institutionnelle, écrivez-nous à {email} ou remplissez le formulaire."
+  },
+  "alianzas": {
+    "beneficioLabel": "Avantage du partenariat"
+  },
+  "noticias": {
+    "ultimas": "Dernières Publications",
+    "leerMas": "Lire Plus",
+    "cargarMas": "Charger Plus",
+    "categoriaTodos": "Tous"
+  },
+  "documentos": {
+    "intro": "Ressources et liens de référence pour les relations commerciales entre le Chili et Haïti."
+  },
+  "links": {
+    "organizaciones": "Organisations",
+    "exportLabel": "Promotion des exportations",
+    "exportTitle": "Agence de Promotion des Exportations",
+    "exportDesc": "Organisme officiel dédié à la promotion des exportations et à l'attraction des investissements, disponible en plusieurs langues.",
+    "sitioEs": "Site en espagnol",
+    "sitioPt": "Site en portugais"
+  },
+  "contacto": {
+    "hablemos": "Parlons-en",
+    "contactanos": "Contactez-nous",
+    "escribenos": "Écrivez-nous",
+    "enviaMensaje": "Envoyez-nous votre message",
+    "intro": "La Chambre agit comme facilitatrice d'affaires entre le Chili et Haïti, en connectant entrepreneurs, autorités et institutions pour renforcer le commerce bilatéral.",
+    "b1": "Réseautage d'affaires",
+    "b2": "Recherche de partenaires commerciaux",
+    "b3": "Conseil en commerce extérieur",
+    "b4": "Études de marché",
+    "b5": "Conférences et formations",
+    "b6": "Rencontres d'affaires",
+    "nombre": "Nom",
+    "email": "Email",
+    "asunto": "Sujet",
+    "asuntoPlaceholder": "Comment pouvons-nous vous aider ?",
+    "mensaje": "Message",
+    "mensajePlaceholder": "Écrivez votre message ici...",
+    "enviar": "Envoyer",
+    "coordenadas": "Coordonnées",
+    "visitanos": "Rendez-nous visite ou écrivez-nous",
+    "direccion": "Adresse",
+    "telefono": "Téléphone",
+    "horario": "Heures d'ouverture",
+    "horarioValor": "Lundi à vendredi, 9h00 – 18h00",
+    "siguenos": "Suivez-nous",
+    "ubicacion": "Localisation"
+  },
+  "footer": {
+    "tagline": "Organisme facilitateur du commerce, du tourisme et de l'industrie entre le Chili et Haïti.",
+    "lacamara": "La Chambre",
+    "socios": "Membres",
+    "informacion": "Informations",
+    "contacto": "Contact",
+    "rights": "Chambre de Commerce, Tourisme et Industrie Chilo-Haïtienne"
+  },
+  "common": {
+    "readMore": "Lire plus",
+    "backToNews": "Retour aux actualités"
+  }
+}

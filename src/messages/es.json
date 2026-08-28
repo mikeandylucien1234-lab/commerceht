@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "inicio": "Inicio",
+    "quienesSomos": "Quiénes Somos",
+    "lacamara": "La Cámara",
+    "historia": "Historia",
+    "equipo": "Equipo",
+    "servicios": "Servicios",
+    "socios": "Socios",
+    "nuestrosSocios": "Nuestros Socios",
+    "alianzas": "Alianzas",
+    "noticias": "Noticias",
+    "informacion": "Información",
+    "documentos": "Documentos",
+    "links": "Links de Interés",
+    "contacto": "Contacto"
+  },
+  "home": {
+    "pitchTitle": "La Cámara Chileno-Haitiana de Comercio ofrece un espacio único para la creación de negocios e identificación de oportunidades comerciales, además de diversos beneficios.",
+    "pitchSubtitle": "Es una poderosa iniciativa para potenciar relaciones, intercambiar experiencias y detectar desafíos.",
+    "verServicios": "Ver servicios",
+    "novedades": "Novedades y noticias",
+    "verTodo": "VER TODO",
+    "verMas": "Ver más",
+    "yearsBanner": "3 años conectando oportunidades",
+    "experienceLabel": "Experiencia",
+    "experienceTitle": "Una organización con impacto real en la comunidad bilateral",
+    "nuestrosSocios": "Nuestros socios",
+    "sociosEstrategicos": "Socios estratégicos",
+    "sociosLabel": "Socios",
+    "siguenos": "Síguenos",
+    "seguir": "Seguir",
+    "organizacionLabel": "Organización",
+    "departamentos": "Nuestros departamentos",
+    "valores": "Nuestros valores"
+  },
+  "impact": {
+    "item1": "Apoya el comercio bilateral y la inversión en ambos países",
+    "item2": "Promueve el turismo y el intercambio cultural",
+    "item3": "Facilita asesoría, networking y alianzas estratégicas",
+    "item4": "Representa a sus asociados ante entidades públicas y privadas",
+    "item5": "Impulsa proyectos de desarrollo empresarial y tecnológico",
+    "item6": "Forma parte de redes de cooperación internacional (OEA, ONU Mujeres)",
+    "item7": "Miembro de Latinocámaras en Chile"
+  },
+  "values": {
+    "colaboracion": "Colaboración",
+    "crecimiento": "Crecimiento",
+    "diversidad": "Diversidad",
+    "innovacion": "Innovación",
+    "confianza": "Confianza"
+  },
+  "lacamara": {
+    "kicker": "50 años de historia",
+    "title": "Una institución al servicio del comercio bilateral",
+    "p1": "La Cámara Chileno-Haitiana de Comercio, Turismo e Industria es una institución con 50 años de trayectoria facilitando las relaciones comerciales entre Chile y Haití.",
+    "p2": "Nuestra misión es fortalecer los lazos económicos y culturales entre ambas naciones, acompañando a empresarios y organizaciones con asesoría, representación institucional y una red de contactos consolidada a lo largo de cinco décadas.",
+    "comitesTitle": "Comités",
+    "comitesDesc": "Nuestra actividad se organiza en torno a comités temáticos, cada uno enfocado en un área clave para el desarrollo de las relaciones bilaterales."
+  },
+  "historia": {
+    "intro": "Desde hace 50 años, la Cámara Chileno-Haitiana de Comercio, Turismo e Industria acompaña el desarrollo de las relaciones bilaterales entre Chile y Haití, construyendo un legado de cooperación e integración empresarial.",
+    "premioLabel": "Reconocimiento",
+    "premioTitle": "Premio Barón de Río Branco",
+    "premioDesc": "Desde hace 21 años, la Cámara entrega anualmente este premio a las empresas que se distinguen por su contribución al fortalecimiento de las relaciones comerciales y culturales entre Chile y Haití."
+  },
+  "equipo": {
+    "liderazgo": "Liderazgo",
+    "presidencia": "Presidencia",
+    "directores": "Directores",
+    "gerencia": "Gerencia"
+  },
+  "servicios": {
+    "intro": "La Cámara Chileno-Haitiana de Comercio ofrece un espacio único para la creación de negocios e identificación de oportunidades comerciales entre Chile y Haití.",
+    "banner": "Networking poderoso • Misiones comerciales • Comités"
+  },
+  "socios": {
+    "nivelPremium": "Nivel premium",
+    "platinum": "Socios Platinum",
+    "ccbc": "Socios CCBC",
+    "uneteLabel": "Únete",
+    "uneteTitle": "Asóciate a la CCBC",
+    "uneteDesc": "Para convertirte en socio y acceder a nuestra red de contactos, beneficios y representación institucional, escríbenos a {email} o completa el formulario."
+  },
+  "alianzas": {
+    "beneficioLabel": "Beneficio del convenio"
+  },
+  "noticias": {
+    "ultimas": "Últimas Publicaciones",
+    "leerMas": "Leer Más",
+    "cargarMas": "Cargar Más",
+    "categoriaTodos": "Todos"
+  },
+  "documentos": {
+    "intro": "Recursos y enlaces de referencia para las relaciones comerciales entre Chile y Haití."
+  },
+  "links": {
+    "organizaciones": "Organizaciones",
+    "exportLabel": "Promoción de exportaciones",
+    "exportTitle": "Agencia de Promoción de Exportaciones",
+    "exportDesc": "Organismo oficial dedicado a la promoción de las exportaciones y la atracción de inversión, disponible en varios idiomas.",
+    "sitioEs": "Sitio en español",
+    "sitioPt": "Sitio en portugués"
+  },
+  "contacto": {
+    "hablemos": "Hablemos",
+    "contactanos": "Contáctanos",
+    "escribenos": "Escríbenos",
+    "enviaMensaje": "Envíanos tu mensaje",
+    "intro": "La Cámara actúa como facilitadora de negocios entre Chile y Haití, conectando empresarios, autoridades e instituciones para fortalecer el comercio bilateral.",
+    "b1": "Networking empresarial",
+    "b2": "Búsqueda de socios comerciales",
+    "b3": "Asesoría en comercio exterior",
+    "b4": "Estudios de mercado",
+    "b5": "Conferencias y capacitaciones",
+    "b6": "Encuentros de negocios",
+    "nombre": "Nombre",
+    "email": "Email",
+    "asunto": "Asunto",
+    "asuntoPlaceholder": "¿En qué podemos ayudarte?",
+    "mensaje": "Mensaje",
+    "mensajePlaceholder": "Escribe tu mensaje aquí...",
+    "enviar": "Enviar",
+    "coordenadas": "Coordenadas",
+    "visitanos": "Visítanos o escríbenos",
+    "direccion": "Dirección",
+    "telefono": "Teléfono",
+    "horario": "Horario de atención",
+    "horarioValor": "Lunes a viernes, 9:00 – 18:00",
+    "siguenos": "Síguenos",
+    "ubicacion": "Ubicación"
+  },
+  "footer": {
+    "tagline": "Organismo facilitador del comercio, turismo e industria entre Chile y Haití.",
+    "lacamara": "La Cámara",
+    "socios": "Socios",
+    "informacion": "Información",
+    "contacto": "Contacto",
+    "rights": "Cámara Chileno-Haitiana de Comercio, Turismo e Industria"
+  },
+  "common": {
+    "readMore": "Leer más",
+    "backToNews": "Volver a noticias"
+  }
+}
