@@ -26,10 +26,10 @@ export function ImagePlaceholder({
   }
 
   return (
-    <div
-      className={`absolute inset-0 flex items-center justify-center bg-sky text-center text-xs font-medium uppercase tracking-wide text-navy/50 ${className}`}
-    >
-      {label}
+    <div className={`absolute inset-0 bg-sky ${className}`}>
+      <span className="absolute left-2 top-2 max-w-[calc(100%-16px)] truncate rounded bg-navy/10 px-2 py-1 text-[10px] font-medium uppercase tracking-wide text-navy/60">
+        {label}
+      </span>
     </div>
   );
 }
