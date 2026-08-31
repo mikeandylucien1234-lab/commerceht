@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import {
@@ -38,7 +39,14 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 flex h-[84px] items-center justify-between border-b border-navy/10 bg-white px-6 md:px-14">
       <Link href="/" className="flex items-center gap-3">
-        <span className="font-serif text-xl font-bold text-navy">CCH</span>
+        <Image
+          src="/images/cch-logo.png"
+          alt="CCH"
+          height={44}
+          width={107}
+          className="h-11 w-auto"
+          priority
+        />
       </Link>
 
       <nav className="hidden items-center gap-9 lg:flex">

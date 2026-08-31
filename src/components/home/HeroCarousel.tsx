@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import type { Locale } from "@/types/content";
 import { t } from "@/types/content";
 import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
@@ -28,7 +29,18 @@ export function HeroCarousel({
 
   return (
     <section className="relative flex h-[340px] items-center justify-center overflow-hidden">
-      <ImagePlaceholder image={slide.image} label={slide.placeholder} />
+      {slide.image ? (
+        <ImagePlaceholder image={slide.image} label={slide.placeholder} />
+      ) : (
+        <Image
+          src="/images/hero-chile-haiti.jpg"
+          alt="Chile y Haití"
+          fill
+          priority
+          className="object-cover"
+          sizes="100vw"
+        />
+      )}
       <div className="absolute inset-0 bg-navy/32" />
       <button
         aria-label="Anterior"

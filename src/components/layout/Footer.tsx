@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { getSiteSettings } from "@/sanity/lib/fetchers";
@@ -17,8 +18,14 @@ function FooterContent({ settings }: { settings: SiteSettings }) {
     <footer className="bg-navy px-6 pb-8 pt-16 md:px-14">
       <div className="grid grid-cols-1 gap-8 border-b border-white/12 pb-10 sm:grid-cols-2 lg:grid-cols-5">
         <div>
-          <span className="mb-3.5 inline-flex items-center rounded-lg bg-white px-4 py-2">
-            <span className="font-serif text-lg font-bold text-navy">CCH</span>
+          <span className="mb-3.5 inline-flex items-center rounded-lg bg-white px-4 py-2.5">
+            <Image
+              src="/images/cch-logo.png"
+              alt="CCH"
+              height={30}
+              width={73}
+              className="h-[30px] w-auto"
+            />
           </span>
           <p className="max-w-[260px] text-sm leading-relaxed text-accent-light">
             {t("tagline")}
