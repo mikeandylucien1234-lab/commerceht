@@ -37,7 +37,11 @@ function ArticleContent({ post }: { post: Post }) {
   return (
     <article>
       <div className="relative h-[280px] md:h-[380px]">
-        <ImagePlaceholder image={post.image} label={post.placeholder} />
+        <ImagePlaceholder
+          image={post.image}
+          src={post.imageSrc}
+          label={post.placeholder}
+        />
         <div className="absolute inset-0 bg-navy/35" />
         <div className="absolute inset-0 flex flex-col items-start justify-end px-6 pb-10 md:px-14">
           <div className="mb-3 text-xs font-semibold uppercase tracking-widest text-white/80">
@@ -61,6 +65,12 @@ function ArticleContent({ post }: { post: Post }) {
         {post.body ? (
           <div className="flex flex-col gap-4 text-base leading-relaxed text-ink [&_h2]:font-serif [&_h2]:text-xl [&_h2]:font-bold [&_h2]:text-navy [&_ul]:list-disc [&_ul]:pl-5">
             <PortableText value={post.body as never} />
+          </div>
+        ) : post.paragraphs ? (
+          <div className="flex flex-col gap-4 text-base leading-relaxed text-ink">
+            {post.paragraphs.map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
           </div>
         ) : null}
       </div>

@@ -88,6 +88,25 @@ export const valuesList: { es: string; fr: string }[] = [
 
 export const posts: Post[] = [
   {
+    id: "caonabo-airlines-visita",
+    slug: "caonabo-airlines-visita-presidencial",
+    title: "La Cámara reafirma su apoyo a Caonabo Airlines",
+    category: "Noticias",
+    excerpt:
+      "El presidente de la Cámara visitó las instalaciones de Caonabo Airlines, reafirmando el compromiso institucional con la conectividad, el desarrollo económico y las oportunidades entre Haití y la región.",
+    date: "2026-08-27",
+    placeholder: "Visita a Caonabo Airlines",
+    // imageSrc: "/images/news/caonabo-airlines-visita.jpg", // TODO: add once the real photo file is provided
+    paragraphs: [
+      "La Cámara Chileno-Haitiana de Comercio, Turismo e Industria reafirma su apoyo a Caonabo Airlines, como parte de nuestro compromiso con iniciativas que contribuyen al fortalecimiento de la conectividad, el desarrollo económico y las oportunidades entre Haití y la región.",
+      "La reciente visita del presidente de la Cámara a las instalaciones de Caonabo Airlines representa un gesto de acompañamiento y confianza. Más que una visita institucional, es un mensaje para nuestra comunidad: creemos en los proyectos que buscan generar nuevas oportunidades y fortalecer la conexión de Haití con el mundo.",
+      "En momentos en que nuestra comunidad necesita señales de confianza y esperanza, consideramos importante estar presentes, conocer de cerca las iniciativas que se están desarrollando y expresar nuestro respaldo a quienes trabajan por construir nuevas posibilidades.",
+      "Esta visita simboliza la seguridad de un proyecto transparente y con propósito, enfocado en generar oportunidades de inversión, potenciar el turismo bilateral y consolidar el bienestar y la integración de nuestra gente.",
+      "Con el despegue de Caonabo Airlines, reafirmamos que este es un paso firme hacia un futuro conectado, seguro y lleno de posibilidades para todos.",
+      "Desde la Cámara Chileno-Haitiana de Comercio, Turismo e Industria continuaremos promoviendo la confianza, la cooperación y las alianzas estratégicas que puedan contribuir al crecimiento del comercio, el turismo y la inversión.",
+    ],
+  },
+  {
     id: "1",
     slug: "mision-comercial-20-empresas",
     title: "Misión comercial reúne a 20 empresas de ambos países",

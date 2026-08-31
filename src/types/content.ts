@@ -43,8 +43,12 @@ export type Post = {
   excerpt: string;
   date: string;
   image?: SanityImageLike;
+  /** Static public/ path used when there's no Sanity image yet (real, non-CMS photos). */
+  imageSrc?: string;
   placeholder: string;
   body?: unknown[];
+  /** Plain-text paragraphs for placeholder-sourced articles (Sanity posts use `body` portable text instead). */
+  paragraphs?: string[];
 };
 
 export type DocumentResource = {

@@ -4,14 +4,17 @@ import type { SanityImageLike } from "@/types/content";
 
 export function ImagePlaceholder({
   image,
+  src,
   label,
   className = "",
 }: {
   image?: SanityImageLike;
+  /** Static public/ path, used when there's no Sanity image yet (takes priority over `image`). */
+  src?: string;
   label: string;
   className?: string;
 }) {
-  const url = urlForImage(image ?? undefined)?.url();
+  const url = src || urlForImage(image ?? undefined)?.url();
 
   if (url) {
     return (
