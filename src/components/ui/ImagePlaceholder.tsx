@@ -22,7 +22,7 @@ export function ImagePlaceholder({
         src={url}
         alt={label}
         fill
-        className={`object-cover ${className}`}
+        className={`object-cover object-top ${className}`}
         sizes="(max-width: 768px) 100vw, 50vw"
       />
     );
