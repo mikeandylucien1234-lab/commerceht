@@ -31,20 +31,21 @@ export const siteSettings: SiteSettings = {
     fr: "3 ans à créer des opportunités",
   },
   address: "Av. Providencia 1234, Providencia, Santiago, Chile",
-  phone: "+56 2 2345 6789",
-  email: "contacto@camarachileohaiti.org",
-  membershipEmail: "socios@camarachileohaiti.org",
+  phone: "+56 9 8363 4549",
+  email: "contacto@camarachileohaitiana.cl",
+  membershipEmail: "contacto@camarachileohaitiana.cl",
+  website: "www.camarachileohaitiana.cl",
   officeHours: {
     es: "Lunes a viernes, 9:00 – 18:00",
     fr: "Lundi à vendredi, 9h00 – 18h00",
   },
   socialLinks: {
     facebook: "#",
-    instagram: "#",
+    instagram: "https://www.instagram.com/camarachh",
     linkedin: "#",
     tiktok: "#",
   },
-  socialHandle: "@camara_cch",
+  socialHandle: "@camarachh",
 };
 
 export const impactItems: { es: string; fr: string }[] = [
@@ -88,6 +89,23 @@ export const valuesList: { es: string; fr: string }[] = [
 
 export const posts: Post[] = [
   {
+    id: "crezcamos-juntos",
+    slug: "crezcamos-juntos-unete-a-la-camara",
+    title: "Crezcamos juntos: únete a la Cámara Chileno-Haitiana",
+    category: "Portal Socios",
+    excerpt:
+      "¿Eres empresario, emprendedor o profesional buscando nuevas oportunidades? La Cámara te invita a formar parte de su comunidad empresarial y construir juntos una red de colaboración entre Haití, Chile y el mundo.",
+    date: "2026-08-29",
+    placeholder: "Crezcamos Juntos",
+    imageSrc: "/images/news/crezcamos-juntos.jpg",
+    paragraphs: [
+      "¿Eres empresario, emprendedor o profesional y estás buscando nuevas oportunidades para crecer y conectar con nuevos mercados?",
+      "La Cámara Chileno-Haitiana de Comercio, Turismo e Industria A.G. te invita a formar parte de nuestra comunidad empresarial y construir juntos una red de colaboración entre Haití, Chile y el mundo.",
+      "Al ser parte de la Cámara podrás acceder a: networking y nuevos contactos empresariales; ruedas de negocios y encuentros comerciales; promoción y visibilidad de tu empresa; conferencias, capacitaciones y seminarios; información sobre oportunidades de inversión y comercio; apoyo para crear alianzas estratégicas; y vinculación y representación institucional ante organismos públicos y privados.",
+      "Los grandes negocios nacen de grandes conexiones. ¡Únete hoy y forma parte de una comunidad empresarial que trabaja por el desarrollo de Haití!",
+    ],
+  },
+  {
     id: "caonabo-airlines-visita",
     slug: "caonabo-airlines-visita-presidencial",
     title: "La Cámara reafirma su apoyo a Caonabo Airlines",
@@ -96,7 +114,7 @@ export const posts: Post[] = [
       "El presidente de la Cámara visitó las instalaciones de Caonabo Airlines, reafirmando el compromiso institucional con la conectividad, el desarrollo económico y las oportunidades entre Haití y la región.",
     date: "2026-08-27",
     placeholder: "Visita a Caonabo Airlines",
-    // imageSrc: "/images/news/caonabo-airlines-visita.jpg", // TODO: add once the real photo file is provided
+    imageSrc: "/images/news/caonabo-airlines.jpg",
     paragraphs: [
       "La Cámara Chileno-Haitiana de Comercio, Turismo e Industria reafirma su apoyo a Caonabo Airlines, como parte de nuestro compromiso con iniciativas que contribuyen al fortalecimiento de la conectividad, el desarrollo económico y las oportunidades entre Haití y la región.",
       "La reciente visita del presidente de la Cámara a las instalaciones de Caonabo Airlines representa un gesto de acompañamiento y confianza. Más que una visita institucional, es un mensaje para nuestra comunidad: creemos en los proyectos que buscan generar nuevas oportunidades y fortalecer la conexión de Haití con el mundo.",
@@ -198,6 +216,24 @@ export const posts: Post[] = [
       "Nueva mesa directiva inicia su gestión con foco en el crecimiento de la red.",
     date: "2026-03-15",
     placeholder: "Directorio",
+  },
+  {
+    id: "encuentro-camara-colombiana",
+    slug: "encuentro-anual-camara-chileno-colombiana",
+    title: "Participación en el 16° Encuentro Anual de la Cámara Chileno-Colombiana",
+    category: "Eventos",
+    excerpt:
+      "La Cámara participó en el 16° Encuentro Anual de la Cámara Chileno-Colombiana de Comercio, fortaleciendo lazos y explorando nuevas oportunidades de colaboración con empresarios y líderes de Chile y Colombia.",
+    date: "2024-11-26",
+    placeholder: "Encuentro Cámara Colombiana",
+    imageSrc: "/images/news/encuentro-camara-colombiana.jpg",
+    paragraphs: [
+      "Nos complace compartir con ustedes nuestra participación en el 16° Encuentro Anual de la Cámara Chileno-Colombiana de Comercio. Este evento fue una excelente oportunidad para fortalecer lazos y explorar nuevas oportunidades de colaboración con destacados empresarios y líderes de Chile y Colombia.",
+      "Queremos agradecer especialmente a Julián Flórez por su constante apoyo y por siempre pensar en nuestra Cámara Chileno-Haitiana de Comercio, Turismo e Industria. Como la cámara más joven creada en Chile, seguimos buscando el apoyo y la colaboración de las cámaras establecidas para seguir creciendo y fortaleciendo nuestra presencia.",
+      "Además, fue un placer compartir este espacio con la Cámara de Comercio chileno brasileña, especialmente con su vicepresidenta, Selma Nunes.",
+      "Formar parte del grupo de la Agrupación de Cámaras Latinoamericanas es fundamental para nosotros. Valoramos enormemente la cooperación y el trabajo conjunto, y estamos comprometidos a seguir colaborando para impulsar el comercio y las oportunidades entre nuestros países.",
+      "Juntos, continuaremos trabajando por el crecimiento y la prosperidad de nuestras naciones.",
+    ],
   },
 ];
 

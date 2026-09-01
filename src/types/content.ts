@@ -25,6 +25,7 @@ export type SiteSettings = {
   phone: string;
   email: string;
   membershipEmail: string;
+  website: string;
   officeHours: LocaleString;
   socialLinks: {
     facebook?: string;
