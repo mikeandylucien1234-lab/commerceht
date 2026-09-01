@@ -65,7 +65,7 @@ export type BoardMember = {
   id: string;
   name: string;
   role: LocaleString;
-  company: string;
+  company?: string;
   section: BoardSection;
   photo?: SanityImageLike;
   placeholder: string;

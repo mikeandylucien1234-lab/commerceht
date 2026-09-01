@@ -43,7 +43,11 @@ function EquipoContent({ members }: { members: BoardMember[] }) {
         <h2 className="mb-9 font-serif text-2xl font-bold text-navy md:text-3xl">
           {t("presidencia")}
         </h2>
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:max-w-[712px]">
+        <div
+          className={`grid grid-cols-1 gap-8 ${
+            presidencia.length > 1 ? "sm:grid-cols-2 sm:max-w-[712px]" : "max-w-[340px]"
+          }`}
+        >
           {presidencia.map((m) => (
             <LeaderCard key={m.id} member={m} />
           ))}
@@ -61,16 +65,18 @@ function EquipoContent({ members }: { members: BoardMember[] }) {
         </div>
       </section>
 
-      <section className="px-6 pb-24 pt-14 md:px-14">
-        <h2 className="mb-8 font-serif text-2xl font-bold text-navy">
-          {t("gerencia")}
-        </h2>
-        <div className="max-w-[340px]">
-          {gerencia.map((m) => (
-            <LeaderCard key={m.id} member={m} />
-          ))}
-        </div>
-      </section>
+      {gerencia.length > 0 && (
+        <section className="px-6 pb-24 pt-14 md:px-14">
+          <h2 className="mb-8 font-serif text-2xl font-bold text-navy">
+            {t("gerencia")}
+          </h2>
+          <div className="max-w-[340px]">
+            {gerencia.map((m) => (
+              <LeaderCard key={m.id} member={m} />
+            ))}
+          </div>
+        </section>
+      )}
     </div>
   );
 }

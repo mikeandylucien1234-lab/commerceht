@@ -16,7 +16,7 @@ export function DirectorCard({ member }: { member: BoardMember }) {
           {t(member.role, locale)}
         </div>
         <div className="mb-1 font-serif text-base font-bold text-navy">{member.name}</div>
-        <div className="text-sm text-muted">{member.company}</div>
+        {member.company && <div className="text-sm text-muted">{member.company}</div>}
       </div>
     </div>
   );

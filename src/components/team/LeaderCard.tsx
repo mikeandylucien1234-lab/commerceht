@@ -17,7 +17,7 @@ export function LeaderCard({ member, size = "lg" }: { member: BoardMember; size?
           {t(member.role, locale)}
         </div>
         <div className="mb-1 font-serif text-lg font-bold text-navy">{member.name}</div>
-        <div className="text-sm text-muted">{member.company}</div>
+        {member.company && <div className="text-sm text-muted">{member.company}</div>}
       </div>
     </div>
   );
