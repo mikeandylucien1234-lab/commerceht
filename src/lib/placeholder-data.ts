@@ -106,6 +106,25 @@ export const posts: Post[] = [
     ],
   },
   {
+    id: "visita-colombia-embajada",
+    slug: "visita-colombia-embajada-haiti",
+    title: "El presidente de la Cámara se reúne con la embajada de Haití en Colombia",
+    category: "Noticias",
+    excerpt:
+      "En el marco de una visita a Colombia, el presidente Jimmy Joly sostuvo una reunión con el Chargé d'Affaires de la embajada de Haití en Colombia para fortalecer la integración económica de Haití con América Latina.",
+    date: "2026-08-28",
+    placeholder: "Visita a Colombia",
+    imageSrc: "/images/news/visita-colombia-embajada.jpg",
+    paragraphs: [
+      "La Cámara Chileno-Haitiana de Comercio, Turismo e Industria continúa impulsando acciones concretas para fortalecer la integración económica de Haití con América Latina y generar nuevas oportunidades de cooperación, inversión y comercio.",
+      "En el marco de una visita a Colombia, orientada a abordar diferentes asuntos comerciales y explorar nuevas conexiones empresariales y estratégicas, el presidente de la Cámara, Jimmy Joly, sostuvo una importante reunión con el Chargé d'Affaires de la embajada de Haití en Colombia.",
+      "El encuentro permitió intercambiar perspectivas sobre las oportunidades existentes para fortalecer los vínculos entre Haití, Colombia y otros mercados de América Latina, así como identificar posibles áreas de colaboración institucional y empresarial.",
+      "Entre los temas de interés se abordaron: promoción del comercio y las inversiones entre Haití y América Latina, conexión entre empresarios y organizaciones del sector privado, identificación de nuevas oportunidades de negocios y cooperación, facilitación de vínculos comerciales e institucionales, internacionalización de empresas y productos haitianos, y fortalecimiento de la presencia de Haití en los mercados latinoamericanos.",
+      "Desde la Cámara creemos firmemente que la integración regional es una herramienta fundamental para el desarrollo económico de Haití. Por ello, seguimos trabajando para construir puentes entre empresarios, instituciones, inversionistas y actores estratégicos de la región.",
+      "Haití tiene oportunidades, talento y productos para ofrecer al mundo. El desafío es conectar esas oportunidades con nuevos mercados.",
+    ],
+  },
+  {
     id: "caonabo-airlines-visita",
     slug: "caonabo-airlines-visita-presidencial",
     title: "La Cámara reafirma su apoyo a Caonabo Airlines",
@@ -216,6 +235,57 @@ export const posts: Post[] = [
       "Nueva mesa directiva inicia su gestión con foco en el crecimiento de la red.",
     date: "2026-03-15",
     placeholder: "Directorio",
+  },
+  {
+    id: "latcams-2025",
+    slug: "reunion-latcams-2025",
+    title: "La Cámara participa en la reunión de LATCAMS 2025",
+    category: "Eventos",
+    excerpt:
+      "La Cámara se enorgullece de formar parte de la reunión de Cámaras Latinoamericanas de Comercio (LATCAMS), un espacio clave para fortalecer relaciones entre cámaras de comercio y definir juntos los objetivos y actividades para 2025.",
+    date: "2025-01-31",
+    placeholder: "Reunión LATCAMS",
+    imageSrc: "/images/news/latcams-2025.jpg",
+    paragraphs: [
+      "La Cámara Chileno-Haitiana de Comercio, Turismo e Industria se enorgullece de formar parte de la reunión de Cámaras Latinoamericanas de Comercio LATCAMS, un espacio clave para fortalecer nuestras relaciones como cámaras de comercio y definir juntos los objetivos y actividades para este 2025.",
+      "Creemos que ha llegado el momento de consolidar la unión entre Latinoamérica y el Caribe, impulsando el intercambio comercial, el turismo, la tecnología, la educación y mucho más. ¡Juntos, construiremos nuevas oportunidades para el desarrollo de nuestra región!",
+    ],
+  },
+  {
+    id: "apex-brasil",
+    slug: "encuentro-apexbrasil-sao-paulo",
+    title: "Encuentro con ApexBrasil en São Paulo",
+    category: "Noticias",
+    excerpt:
+      "El presidente Jimmy Joly y el secretario general Fagenson Phadael se reunieron con ApexBrasil en São Paulo para explorar oportunidades de negocios en sectores clave para Haití, como alimentos, agroindustria y tecnología agrícola.",
+    date: "2024-10-19",
+    placeholder: "Encuentro ApexBrasil",
+    imageSrc: "/images/news/apex-brasil.jpg",
+    paragraphs: [
+      "Nos complace compartir con una noticia emocionante sobre el reciente viaje del presidente Jimmy Joly y el secretario general Fagenson Phadael. Este viaje marca un hito significativo en nuestra misión de fortalecer las relaciones comerciales y promover el desarrollo económico sostenible entre Haití y los países de Latino América, especialmente Chile y Brasil.",
+      "Durante esta estancia, nuestros líderes, junto con un miembro de la Cámara de Comercio Haití-Brasil, tuvieron el privilegio de reunirse con ApexBrasil de São Paulo, representada por su jefe Gustavo Sperendio. Este encuentro fue sumamente fructífero, pues se discutieron múltiples oportunidades de negocios en sectores clave donde Haití presenta una gran demanda, como el sector de alimentos, agroindustrial y tecnología agrícola. Estas oportunidades no solo representan un potencial de crecimiento económico, sino también una posibilidad de mejorar la calidad de vida.",
+      "Uno de los temas más destacados fue la colaboración en el ámbito agrícola. A través de las organizaciones brasileñas exportadoras de tecnologías agrícolas, estamos explorando nuevas formas de impulsar la innovación y la eficiencia en el sector agrícola haitiano. Esta colaboración promete traer tecnologías avanzadas y prácticas sostenibles que beneficiarán enormemente a nuestros agricultores y al país en general.",
+      "Además, se abordaron diversos temas de colaboración futura, desde el intercambio de conocimientos hasta la identificación de exportadores confiables.",
+      "Esta visita es solo el comienzo de una serie de iniciativas que planeamos llevar a cabo para seguir fomentando el crecimiento y la cooperación entre nuestras naciones. Estamos entusiasmados por las oportunidades que se avecinan y confiamos en que esta reunión traerá grandes beneficios para todos los empresarios socios de la cámara.",
+    ],
+  },
+  {
+    id: "senadora-beauzile",
+    slug: "encuentro-ex-senadora-edmonde-supplice-beauzile",
+    title: "Encuentro con la ex senadora haitiana Edmonde Supplice Beauzile",
+    category: "Noticias",
+    excerpt:
+      "La Cámara tuvo el honor de reunirse con la ex senadora haitiana Edmonde Supplice Beauzile, quien participó en la Cumbre de la Alianza Progresista en Chile, para abordar temas de gran relevancia para Haití.",
+    date: "2024-10-08",
+    placeholder: "Ex senadora Beauzile",
+    imageSrc: "/images/news/senadora-beauzile.jpg",
+    paragraphs: [
+      "La Cámara Chileno-Haitiana de Comercio, Turismo e Industria tuvo el honor de tener un encuentro con la ex senadora haitiana Edmonde Supplice Beauzile, quien participó en la Cumbre de la Alianza Progresista en Chile. Durante su estancia, mantuvimos una reunión fructífera en la que abordamos temas de gran relevancia para Haití.",
+      "Uno de los principales puntos discutidos fue la situación de inseguridad en Haití. La ex senadora Beauzile compartió sus preocupaciones y perspectivas sobre este desafío, subrayando la necesidad de encontrar soluciones efectivas para mejorar la seguridad en el país.",
+      "En este contexto, exploramos las oportunidades que la Cámara Chileno-Haitiana de Comercio, Turismo e Industria puede brindar a través de inversiones extranjeras en Haití. Reconocemos el potencial de estas inversiones para fomentar el desarrollo económico y contribuir a la estabilización del país. Discutimos diversas estrategias para atraer inversores chilenos y de otros países de Latinoamérica, y cómo estas inversiones pueden ser canalizadas de manera efectiva para generar un impacto positivo en la seguridad y el bienestar de la población haitiana.",
+      "Además, abordamos otros temas de interés común, incluyendo el fortalecimiento de las relaciones comerciales y turísticas entre ambos países, y la promoción de iniciativas conjuntas que beneficien a nuestras comunidades.",
+      "Estamos comprometidos en continuar trabajando juntos para impulsar el desarrollo y la cooperación entre los países de Latino América, especialmente Chile con Haití.",
+    ],
   },
   {
     id: "encuentro-camara-colombiana",
