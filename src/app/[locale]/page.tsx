@@ -59,7 +59,11 @@ export default async function HomePage({
       <NewsGrid posts={posts} />
       <ImpactStats settings={settings} />
       <PartnersMarquee rowA={rowA} rowB={rowB} />
-      <SocialCarousel posts={socialPosts} handle={settings.socialHandle} />
+      <SocialCarousel
+        posts={socialPosts}
+        handle={settings.socialHandle}
+        socialLinks={settings.socialLinks}
+      />
       <DepartmentsGrid departments={departments} />
       <ValuesGrid />
     </div>

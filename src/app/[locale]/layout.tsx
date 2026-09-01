@@ -8,6 +8,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { getSiteSettings } from "@/sanity/lib/fetchers";
 import "../globals.css";
 
 const workSans = Work_Sans({
@@ -44,7 +45,10 @@ export default async function LocaleLayout({
     notFound();
   }
   setRequestLocale(locale);
-  const messages = await getMessages();
+  const [messages, settings] = await Promise.all([
+    getMessages(),
+    getSiteSettings(),
+  ]);
 
   return (
     <html
@@ -53,7 +57,7 @@ export default async function LocaleLayout({
     >
       <body className="min-h-full flex flex-col">
         <NextIntlClientProvider messages={messages}>
-          <Header />
+          <Header socialLinks={settings.socialLinks} />
           <main className="flex-1">
             <Suspense fallback={null}>{children}</Suspense>
           </main>

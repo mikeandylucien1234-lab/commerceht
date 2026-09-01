@@ -20,7 +20,9 @@ function isActive(pathname: string, prefixes: string[]) {
   );
 }
 
-export function Header() {
+type SocialLinks = { facebook?: string; instagram?: string; linkedin?: string };
+
+export function Header({ socialLinks = {} }: { socialLinks?: SocialLinks }) {
   const t = useTranslations("nav");
   const pathname = usePathname();
   const [quienesOpen, setQuienesOpen] = useState(false);
@@ -157,13 +159,13 @@ export function Header() {
 
       <div className="hidden items-center gap-3 lg:flex">
         <LocaleSwitcher />
-        <a href="#" aria-label="Facebook" className="flex h-[34px] w-[34px] items-center justify-center rounded-full bg-sky">
+        <a href={socialLinks.facebook || "#"} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="flex h-[34px] w-[34px] items-center justify-center rounded-full bg-sky">
           <FacebookIcon />
         </a>
-        <a href="#" aria-label="Instagram" className="flex h-[34px] w-[34px] items-center justify-center rounded-full bg-sky">
+        <a href={socialLinks.instagram || "#"} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="flex h-[34px] w-[34px] items-center justify-center rounded-full bg-sky">
           <InstagramIcon />
         </a>
-        <a href="#" aria-label="LinkedIn" className="flex h-[34px] w-[34px] items-center justify-center rounded-full bg-sky">
+        <a href={socialLinks.linkedin || "#"} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="flex h-[34px] w-[34px] items-center justify-center rounded-full bg-sky">
           <LinkedInIcon />
         </a>
       </div>

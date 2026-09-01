@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
 import {
@@ -10,16 +11,25 @@ import {
 } from "@/components/ui/SocialIcons";
 
 type SocialPost = { id: number; platform: "instagram" | "tiktok" | "facebook" };
+type SocialLinks = { facebook?: string; instagram?: string; tiktok?: string };
 
 const CARD_STEP = 284;
 const VISIBLE_COUNT = 4;
 
+const BADGES: { key: keyof SocialLinks; src: string; alt: string }[] = [
+  { key: "facebook", src: "/images/social/facebook-badge.png", alt: "Facebook" },
+  { key: "instagram", src: "/images/social/instagram-badge.png", alt: "Instagram" },
+  { key: "tiktok", src: "/images/social/tiktok-badge.png", alt: "TikTok" },
+];
+
 export function SocialCarousel({
   posts,
   handle,
+  socialLinks = {},
 }: {
   posts: SocialPost[];
   handle: string;
+  socialLinks?: SocialLinks;
 }) {
   const t = useTranslations("home");
   const [index, setIndex] = useState(0);
@@ -90,6 +100,29 @@ export function SocialCarousel({
             ))}
           </div>
         </div>
+      </div>
+      <div className="mt-12 flex flex-wrap items-center justify-center gap-6">
+        {BADGES.map((badge) => {
+          const href = socialLinks[badge.key];
+          if (!href) return null;
+          return (
+            <a
+              key={badge.key}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-[110px] transition-transform hover:scale-105 sm:w-[130px]"
+            >
+              <Image
+                src={badge.src}
+                alt={badge.alt}
+                width={600}
+                height={600}
+                className="h-auto w-full"
+              />
+            </a>
+          );
+        })}
       </div>
     </section>
   );

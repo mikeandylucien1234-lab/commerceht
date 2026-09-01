@@ -40,7 +40,7 @@ export const siteSettings: SiteSettings = {
     fr: "Lundi à vendredi, 9h00 – 18h00",
   },
   socialLinks: {
-    facebook: "#",
+    facebook: "https://www.facebook.com/share/1BuNjHRusX/",
     instagram: "https://www.instagram.com/camarachh",
     linkedin: "#",
     tiktok: "#",

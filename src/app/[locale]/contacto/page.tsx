@@ -8,6 +8,7 @@ import {
   LinkedInIcon,
 } from "@/components/ui/SocialIcons";
 import { getSiteSettings } from "@/sanity/lib/fetchers";
+import type { SiteSettings } from "@/types/content";
 
 export const dynamic = "force-dynamic";
 
@@ -24,15 +25,24 @@ export async function generateMetadata({
 export default async function ContactoPage() {
   const settings = await getSiteSettings();
 
-  return <ContactoContent email={settings.email} address={settings.address} phone={settings.phone} />;
+  return (
+    <ContactoContent
+      email={settings.email}
+      address={settings.address}
+      phone={settings.phone}
+      socialLinks={settings.socialLinks}
+    />
+  );
 }
 
 function ContactoContent({
   email,
   address,
   phone,
+  socialLinks,
 }: {
   email: string;
+  socialLinks: SiteSettings["socialLinks"];
   address: string;
   phone: string;
 }) {
@@ -100,13 +110,13 @@ function ContactoContent({
               {t("siguenos")}
             </div>
             <div className="flex gap-2.5">
-              <a href="#" aria-label="Facebook" className="flex h-[38px] w-[38px] items-center justify-center rounded-full bg-sky">
+              <a href={socialLinks.facebook || "#"} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="flex h-[38px] w-[38px] items-center justify-center rounded-full bg-sky">
                 <FacebookIcon />
               </a>
-              <a href="#" aria-label="Instagram" className="flex h-[38px] w-[38px] items-center justify-center rounded-full bg-sky">
+              <a href={socialLinks.instagram || "#"} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="flex h-[38px] w-[38px] items-center justify-center rounded-full bg-sky">
                 <InstagramIcon />
               </a>
-              <a href="#" aria-label="LinkedIn" className="flex h-[38px] w-[38px] items-center justify-center rounded-full bg-sky">
+              <a href={socialLinks.linkedin || "#"} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="flex h-[38px] w-[38px] items-center justify-center rounded-full bg-sky">
                 <LinkedInIcon />
               </a>
             </div>

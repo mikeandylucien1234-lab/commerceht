@@ -75,13 +75,13 @@ function FooterContent({ settings }: { settings: SiteSettings }) {
           © {new Date().getFullYear()} {t("rights")}
         </div>
         <div className="flex gap-2.5">
-          <a href="#" aria-label="Facebook" className="flex h-8 w-8 items-center justify-center rounded-full bg-white/8">
+          <a href={settings.socialLinks.facebook || "#"} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="flex h-8 w-8 items-center justify-center rounded-full bg-white/8">
             <FacebookIcon size={15} color="#fff" />
           </a>
-          <a href="#" aria-label="Instagram" className="flex h-8 w-8 items-center justify-center rounded-full bg-white/8">
+          <a href={settings.socialLinks.instagram || "#"} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="flex h-8 w-8 items-center justify-center rounded-full bg-white/8">
             <InstagramIcon size={15} color="#fff" />
           </a>
-          <a href="#" aria-label="LinkedIn" className="flex h-8 w-8 items-center justify-center rounded-full bg-white/8">
+          <a href={settings.socialLinks.linkedin || "#"} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="flex h-8 w-8 items-center justify-center rounded-full bg-white/8">
             <LinkedInIcon size={15} color="#fff" />
           </a>
         </div>
