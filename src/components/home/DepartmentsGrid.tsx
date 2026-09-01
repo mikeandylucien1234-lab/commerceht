@@ -33,8 +33,8 @@ export function DepartmentsGrid({ departments }: { departments: Committee[] }) {
                 <Image
                   src={icon}
                   alt={`${i + 1}`}
-                  width={500}
-                  height={330}
+                  width={300}
+                  height={300}
                   className="h-14 w-auto"
                 />
               ) : (
