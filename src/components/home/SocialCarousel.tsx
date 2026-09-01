@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
 import {
@@ -16,11 +15,11 @@ type SocialLinks = { facebook?: string; instagram?: string; tiktok?: string };
 const CARD_STEP = 284;
 const VISIBLE_COUNT = 4;
 
-const BADGES: { key: keyof SocialLinks; src: string; alt: string }[] = [
-  { key: "facebook", src: "/images/social/facebook-badge.png", alt: "Facebook" },
-  { key: "instagram", src: "/images/social/instagram-badge.png", alt: "Instagram" },
-  { key: "tiktok", src: "/images/social/tiktok-badge.png", alt: "TikTok" },
-];
+const BADGE_SRC: Record<SocialPost["platform"], string> = {
+  facebook: "/images/social/facebook-badge.png",
+  instagram: "/images/social/instagram-badge.png",
+  tiktok: "/images/social/tiktok-badge.png",
+};
 
 export function SocialCarousel({
   posts,
@@ -71,28 +70,28 @@ export function SocialCarousel({
             {posts.map((post) => (
               <a
                 key={post.id}
-                href="#"
+                href={socialLinks[post.platform] || "#"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-[260px] flex-none"
               >
-                <div className="relative h-[260px] overflow-hidden rounded-2xl shadow-md">
-                  <ImagePlaceholder label="Post" />
-                  <div
-                    className="absolute inset-0"
-                    style={{
-                      background:
-                        "linear-gradient(to top, rgba(11,45,92,0.55) 0%, rgba(11,45,92,0) 45%)",
-                    }}
-                  />
-                  <div className="absolute right-2.5 top-2.5 flex h-[34px] w-[34px] items-center justify-center rounded-[9px] bg-white shadow">
-                    {post.platform === "instagram" && (
-                      <InstagramGradientIcon id={String(post.id)} />
-                    )}
-                    {post.platform === "tiktok" && <TikTokIcon size={18} />}
-                    {post.platform === "facebook" && <FacebookRoundIcon />}
+                <div className="overflow-hidden rounded-2xl bg-white shadow-md">
+                  <div className="relative h-[210px]">
+                    <ImagePlaceholder
+                      src={BADGE_SRC[post.platform]}
+                      label="Post"
+                      fit="contain"
+                      className="p-7"
+                    />
+                    <div className="absolute right-2.5 top-2.5 flex h-[34px] w-[34px] items-center justify-center rounded-[9px] bg-white shadow">
+                      {post.platform === "instagram" && (
+                        <InstagramGradientIcon id={String(post.id)} />
+                      )}
+                      {post.platform === "tiktok" && <TikTokIcon size={18} />}
+                      {post.platform === "facebook" && <FacebookRoundIcon />}
+                    </div>
                   </div>
-                  <div className="absolute bottom-2.5 left-3 text-xs font-semibold text-white">
+                  <div className="border-t border-navy/10 px-4 py-3 text-center text-sm font-semibold text-navy">
                     {t("seguir")} →
                   </div>
                 </div>
@@ -100,29 +99,6 @@ export function SocialCarousel({
             ))}
           </div>
         </div>
-      </div>
-      <div className="mt-12 flex flex-wrap items-center justify-center gap-6">
-        {BADGES.map((badge) => {
-          const href = socialLinks[badge.key];
-          if (!href) return null;
-          return (
-            <a
-              key={badge.key}
-              href={href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-[110px] transition-transform hover:scale-105 sm:w-[130px]"
-            >
-              <Image
-                src={badge.src}
-                alt={badge.alt}
-                width={600}
-                height={600}
-                className="h-auto w-full"
-              />
-            </a>
-          );
-        })}
       </div>
     </section>
   );

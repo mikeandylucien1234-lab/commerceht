@@ -7,12 +7,15 @@ export function ImagePlaceholder({
   src,
   label,
   className = "",
+  fit = "cover",
 }: {
   image?: SanityImageLike;
   /** Static public/ path, used when there's no Sanity image yet (takes priority over `image`). */
   src?: string;
   label: string;
   className?: string;
+  /** "cover" crops to fill (photos); "contain" shows the whole image (logos/badges). */
+  fit?: "cover" | "contain";
 }) {
   const url = src || urlForImage(image ?? undefined)?.url();
 
@@ -22,7 +25,7 @@ export function ImagePlaceholder({
         src={url}
         alt={label}
         fill
-        className={`object-cover object-top ${className}`}
+        className={`${fit === "cover" ? "object-cover object-top" : "object-contain"} ${className}`}
         sizes="(max-width: 768px) 100vw, 50vw"
       />
     );
