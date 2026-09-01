@@ -7,6 +7,8 @@ const NUMBER_ICONS: Record<number, string> = {
   1: "/images/departments/num-01.png",
   2: "/images/departments/num-02.png",
   3: "/images/departments/num-03.png",
+  4: "/images/departments/num-04.png",
+  5: "/images/departments/num-05.png",
 };
 
 export function DepartmentsGrid({ departments }: { departments: Committee[] }) {
