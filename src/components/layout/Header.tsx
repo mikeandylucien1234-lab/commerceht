@@ -26,17 +26,9 @@ export function Header({ socialLinks = {} }: { socialLinks?: SocialLinks }) {
   const t = useTranslations("nav");
   const pathname = usePathname();
   const [quienesOpen, setQuienesOpen] = useState(false);
-  const [sociosOpen, setSociosOpen] = useState(false);
-  const [infoOpen, setInfoOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  const quienesActive = isActive(pathname, [
-    "/la-camara",
-    "/la-camara/historia",
-    "/la-camara/equipo",
-  ]);
-  const sociosActive = isActive(pathname, ["/socios", "/socios/alianzas"]);
-  const infoActive = isActive(pathname, ["/documentos", "/links"]);
+  const quienesActive = isActive(pathname, ["/la-camara", "/la-camara/equipo"]);
 
   return (
     <header className="sticky top-0 z-50 flex h-[84px] items-center justify-between border-b border-navy/10 bg-white px-6 md:px-14">
@@ -76,9 +68,6 @@ export function Header({ socialLinks = {} }: { socialLinks?: SocialLinks }) {
               <Link href="/la-camara" className="rounded-md px-3.5 py-2.5 text-sm font-medium text-ink hover:bg-mist">
                 {t("lacamara")}
               </Link>
-              <Link href="/la-camara/historia" className="rounded-md px-3.5 py-2.5 text-sm font-medium text-ink hover:bg-mist">
-                {t("historia")}
-              </Link>
               <Link href="/la-camara/equipo" className="rounded-md px-3.5 py-2.5 text-sm font-medium text-ink hover:bg-mist">
                 {t("equipo")}
               </Link>
@@ -94,28 +83,13 @@ export function Header({ socialLinks = {} }: { socialLinks?: SocialLinks }) {
           {t("servicios")}
         </Link>
 
-        <div
-          className="relative"
-          onMouseEnter={() => setSociosOpen(true)}
-          onMouseLeave={() => setSociosOpen(false)}
+        <Link
+          href="/socios"
+          className={NAV_LINK_CLASS}
+          style={{ color: pathname.startsWith("/socios") ? "#D62828" : undefined }}
         >
-          <button
-            className={`flex items-center gap-1 ${NAV_LINK_CLASS}`}
-            style={{ color: sociosActive ? "#D62828" : undefined }}
-          >
-            {t("socios")} <span className="text-[0.7em]">▾</span>
-          </button>
-          {sociosOpen && (
-            <div className="absolute left-[-16px] top-7 flex min-w-[190px] flex-col gap-1 rounded-lg border border-navy/10 bg-white p-2 shadow-lg">
-              <Link href="/socios" className="rounded-md px-3.5 py-2.5 text-sm font-medium text-ink hover:bg-mist">
-                {t("nuestrosSocios")}
-              </Link>
-              <Link href="/socios/alianzas" className="rounded-md px-3.5 py-2.5 text-sm font-medium text-ink hover:bg-mist">
-                {t("alianzas")}
-              </Link>
-            </div>
-          )}
-        </div>
+          {t("socios")}
+        </Link>
 
         <Link
           href="/noticias"
@@ -124,29 +98,6 @@ export function Header({ socialLinks = {} }: { socialLinks?: SocialLinks }) {
         >
           {t("noticias")}
         </Link>
-
-        <div
-          className="relative"
-          onMouseEnter={() => setInfoOpen(true)}
-          onMouseLeave={() => setInfoOpen(false)}
-        >
-          <button
-            className={`flex items-center gap-1 ${NAV_LINK_CLASS}`}
-            style={{ color: infoActive ? "#D62828" : undefined }}
-          >
-            {t("informacion")} <span className="text-[0.7em]">▾</span>
-          </button>
-          {infoOpen && (
-            <div className="absolute left-[-16px] top-7 flex min-w-[180px] flex-col gap-1 rounded-lg border border-navy/10 bg-white p-2 shadow-lg">
-              <Link href="/documentos" className="rounded-md px-3.5 py-2.5 text-sm font-medium text-ink hover:bg-mist">
-                {t("documentos")}
-              </Link>
-              <Link href="/links" className="rounded-md px-3.5 py-2.5 text-sm font-medium text-ink hover:bg-mist">
-                {t("links")}
-              </Link>
-            </div>
-          )}
-        </div>
 
         <Link
           href="/contacto"
@@ -182,14 +133,10 @@ export function Header({ socialLinks = {} }: { socialLinks?: SocialLinks }) {
         <div className="absolute left-0 top-[84px] flex w-full flex-col gap-1 border-b border-navy/10 bg-white p-4 shadow-lg lg:hidden">
           <Link href="/" className="rounded-md px-3 py-2.5 text-sm font-semibold text-ink hover:bg-mist" onClick={() => setMobileOpen(false)}>{t("inicio")}</Link>
           <Link href="/la-camara" className="rounded-md px-3 py-2.5 text-sm font-semibold text-ink hover:bg-mist" onClick={() => setMobileOpen(false)}>{t("lacamara")}</Link>
-          <Link href="/la-camara/historia" className="rounded-md px-3 py-2.5 text-sm font-semibold text-ink hover:bg-mist" onClick={() => setMobileOpen(false)}>{t("historia")}</Link>
           <Link href="/la-camara/equipo" className="rounded-md px-3 py-2.5 text-sm font-semibold text-ink hover:bg-mist" onClick={() => setMobileOpen(false)}>{t("equipo")}</Link>
           <Link href="/servicios" className="rounded-md px-3 py-2.5 text-sm font-semibold text-ink hover:bg-mist" onClick={() => setMobileOpen(false)}>{t("servicios")}</Link>
-          <Link href="/socios" className="rounded-md px-3 py-2.5 text-sm font-semibold text-ink hover:bg-mist" onClick={() => setMobileOpen(false)}>{t("nuestrosSocios")}</Link>
-          <Link href="/socios/alianzas" className="rounded-md px-3 py-2.5 text-sm font-semibold text-ink hover:bg-mist" onClick={() => setMobileOpen(false)}>{t("alianzas")}</Link>
+          <Link href="/socios" className="rounded-md px-3 py-2.5 text-sm font-semibold text-ink hover:bg-mist" onClick={() => setMobileOpen(false)}>{t("socios")}</Link>
           <Link href="/noticias" className="rounded-md px-3 py-2.5 text-sm font-semibold text-ink hover:bg-mist" onClick={() => setMobileOpen(false)}>{t("noticias")}</Link>
-          <Link href="/documentos" className="rounded-md px-3 py-2.5 text-sm font-semibold text-ink hover:bg-mist" onClick={() => setMobileOpen(false)}>{t("documentos")}</Link>
-          <Link href="/links" className="rounded-md px-3 py-2.5 text-sm font-semibold text-ink hover:bg-mist" onClick={() => setMobileOpen(false)}>{t("links")}</Link>
           <Link href="/contacto" className="rounded-md px-3 py-2.5 text-sm font-semibold text-ink hover:bg-mist" onClick={() => setMobileOpen(false)}>{t("contacto")}</Link>
           <div className="px-3 pt-2">
             <LocaleSwitcher />

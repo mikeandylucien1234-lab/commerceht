@@ -16,7 +16,7 @@ function FooterContent({ settings }: { settings: SiteSettings }) {
 
   return (
     <footer className="bg-navy px-6 pb-8 pt-16 md:px-14">
-      <div className="grid grid-cols-1 gap-8 border-b border-white/12 pb-10 sm:grid-cols-2 lg:grid-cols-5">
+      <div className="grid grid-cols-1 gap-8 border-b border-white/12 pb-10 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <span className="mb-3.5 inline-flex items-center rounded-lg bg-white px-4 py-2.5">
             <Image
@@ -37,7 +37,6 @@ function FooterContent({ settings }: { settings: SiteSettings }) {
           </div>
           <div className="flex flex-col gap-2.5 text-sm text-line">
             <Link href="/la-camara">{nav("lacamara")}</Link>
-            <Link href="/la-camara/historia">{nav("historia")}</Link>
             <Link href="/la-camara/equipo">{nav("equipo")}</Link>
           </div>
         </div>
@@ -47,16 +46,6 @@ function FooterContent({ settings }: { settings: SiteSettings }) {
           </div>
           <div className="flex flex-col gap-2.5 text-sm text-line">
             <Link href="/socios">{nav("nuestrosSocios")}</Link>
-            <Link href="/socios/alianzas">{nav("alianzas")}</Link>
-          </div>
-        </div>
-        <div>
-          <div className="mb-4 text-xs font-semibold uppercase tracking-wider text-red">
-            {t("informacion")}
-          </div>
-          <div className="flex flex-col gap-2.5 text-sm text-line">
-            <Link href="/documentos">{nav("documentos")}</Link>
-            <Link href="/links">{nav("links")}</Link>
           </div>
         </div>
         <div>
