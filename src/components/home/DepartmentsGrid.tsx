@@ -30,13 +30,14 @@ export function DepartmentsGrid({ departments }: { departments: Committee[] }) {
               className="flex min-h-[220px] flex-col rounded-xl bg-mist p-6"
             >
               {icon ? (
-                <Image
-                  src={icon}
-                  alt={`${i + 1}`}
-                  width={300}
-                  height={300}
-                  className="h-14 w-auto"
-                />
+                <div className="relative h-9 w-9">
+                  <Image
+                    src={icon}
+                    alt={`${i + 1}`}
+                    fill
+                    className="object-contain object-left"
+                  />
+                </div>
               ) : (
                 <div className="font-serif text-3xl font-bold text-red/50">
                   {String(i + 1).padStart(2, "0")}
