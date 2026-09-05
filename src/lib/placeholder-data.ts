@@ -355,11 +355,32 @@ export const platinumPartners: Partner[] = Array.from(
   })
 );
 
-export const ccbcPartners: Partner[] = Array.from({ length: 27 }, (_, i) => ({
-  id: `ccbc-${i + 1}`,
-  name: `Socio CCBC ${i + 1}`,
-  tier: "ccbc" as const,
-}));
+export const ccbcPartners: Partner[] = [
+  {
+    id: "matt-vetivert",
+    name: "Matt Vétivert Aceite",
+    tier: "ccbc",
+    logoSrc: "/images/partners/matt-vetivert.png",
+  },
+  {
+    id: "caonabo-airlines",
+    name: "Caonabo Airlines",
+    tier: "ccbc",
+    logoSrc: "/images/partners/caonabo-airlines.png",
+  },
+  {
+    id: "black-house-spa",
+    name: "Black House Spa",
+    tier: "ccbc",
+    logoSrc: "/images/partners/black-house-spa.png",
+  },
+  {
+    id: "uiihappy",
+    name: "Uiihappy",
+    tier: "ccbc",
+    logoSrc: "/images/partners/uiihappy.png",
+  },
+];
 
 export const strategicPartners: Partner[] = [
   {
