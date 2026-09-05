@@ -68,6 +68,8 @@ export type BoardMember = {
   company?: string;
   section: BoardSection;
   photo?: SanityImageLike;
+  /** Static public/ path used when there's no Sanity image yet (real, non-CMS photos). */
+  photoSrc?: string;
   placeholder: string;
 };
 

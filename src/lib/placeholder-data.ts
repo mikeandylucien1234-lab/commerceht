@@ -229,6 +229,7 @@ export const boardMembers: BoardMember[] = [
     name: "Jimmy Joly",
     role: { es: "Presidente", fr: "Président" },
     section: "presidencia",
+    photoSrc: "/images/team/jimmy-joly.jpg",
     placeholder: "Presidente",
   },
   {
@@ -236,6 +237,7 @@ export const boardMembers: BoardMember[] = [
     name: "Fagenson Phadael",
     role: { es: "Secretario General", fr: "Secrétaire Général" },
     section: "directores",
+    photoSrc: "/images/team/fagenson-phadael.jpg",
     placeholder: "Secretario General",
   },
   {
@@ -243,6 +245,7 @@ export const boardMembers: BoardMember[] = [
     name: "Douanius Norvin",
     role: { es: "Tesorero", fr: "Trésorier" },
     section: "directores",
+    photoSrc: "/images/team/douanius-norvin.jpg",
     placeholder: "Tesorero",
   },
   {
@@ -250,6 +253,7 @@ export const boardMembers: BoardMember[] = [
     name: "Manuel Soto",
     role: { es: "Consejero", fr: "Conseiller" },
     section: "directores",
+    photoSrc: "/images/team/manuel-soto.jpg",
     placeholder: "Consejero",
   },
 ];
