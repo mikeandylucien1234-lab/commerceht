@@ -70,11 +70,7 @@ export async function getPartners(): Promise<Partner[]> {
   const data = await sanityFetch<Partner[]>(partnersQuery, {}, ["partner"]);
   return data && data.length > 0
     ? data
-    : [
-        ...placeholder.strategicPartners,
-        ...placeholder.platinumPartners,
-        ...placeholder.ccbcPartners,
-      ];
+    : [...placeholder.strategicPartners, ...placeholder.ccbcPartners];
 }
 
 export async function getAlliances(): Promise<Alliance[]> {

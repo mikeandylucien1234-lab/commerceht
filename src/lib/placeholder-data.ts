@@ -346,15 +346,6 @@ export const committees: Committee[] = [
   },
 ];
 
-export const platinumPartners: Partner[] = Array.from(
-  { length: 8 },
-  (_, i) => ({
-    id: `platinum-${i + 1}`,
-    name: `Socio Platinum ${i + 1}`,
-    tier: "platinum" as const,
-  })
-);
-
 export const ccbcPartners: Partner[] = [
   {
     id: "matt-vetivert",
@@ -414,15 +405,6 @@ export const strategicPartners: Partner[] = [
     logoSrc: "/images/partners/usina-startup.png",
   },
 ];
-
-export const alliancePartnerLogos: Partner[] = Array.from(
-  { length: 10 },
-  (_, i) => ({
-    id: `alianza-${i + 1}`,
-    name: `Aliado ${i + 1}`,
-    tier: "estrategico" as const,
-  })
-);
 
 export const alliances: Alliance[] = [
   {

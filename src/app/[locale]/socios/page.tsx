@@ -47,7 +47,7 @@ function SociosContent({
       <PageHero kicker={tNav("socios")} title={tNav("nuestrosSocios")} />
 
       {estrategicos.length > 0 && (
-        <section className="px-6 pt-16 md:px-14">
+        <section className="px-6 py-16 md:px-14">
           <div className="mb-2.5 text-xs font-semibold uppercase tracking-widest text-red">
             {t("nivelPremium")}
           </div>
@@ -61,26 +61,30 @@ function SociosContent({
         </section>
       )}
 
-      <section className="px-6 py-16 md:px-14">
-        <div className="mb-2.5 text-xs font-semibold uppercase tracking-widest text-red">
-          {t("nivelPremium")}
-        </div>
-        <h2 className="mb-8 font-serif text-2xl font-bold text-navy md:text-3xl">
-          {t("platinum")}
-        </h2>
-        <LogoGrid partners={platinum} />
-      </section>
+      {platinum.length > 0 && (
+        <section className="px-6 py-16 md:px-14">
+          <div className="mb-2.5 text-xs font-semibold uppercase tracking-widest text-red">
+            {t("nivelPremium")}
+          </div>
+          <h2 className="mb-8 font-serif text-2xl font-bold text-navy md:text-3xl">
+            {t("platinum")}
+          </h2>
+          <LogoGrid partners={platinum} />
+        </section>
+      )}
 
-      <section className="bg-mist px-6 pb-18 pt-4 md:px-14">
-        <h2 className="mb-8 font-serif text-2xl font-bold text-navy">
-          {t("ccbc")}
-        </h2>
-        <LogoGrid
-          partners={ccbc}
-          columns="grid-cols-3 sm:grid-cols-5 lg:grid-cols-9"
-          height="h-[78px]"
-        />
-      </section>
+      {ccbc.length > 0 && (
+        <section className="bg-mist px-6 py-16 md:px-14">
+          <h2 className="mb-8 font-serif text-2xl font-bold text-navy">
+            {t("ccbc")}
+          </h2>
+          <LogoGrid
+            partners={ccbc}
+            columns="grid-cols-3 sm:grid-cols-5 lg:grid-cols-9"
+            height="h-[78px]"
+          />
+        </section>
+      )}
 
       <section className="px-6 py-16 md:px-14">
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-14 lg:grid-cols-2">
