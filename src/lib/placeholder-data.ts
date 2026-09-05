@@ -361,23 +361,38 @@ export const ccbcPartners: Partner[] = Array.from({ length: 27 }, (_, i) => ({
   tier: "ccbc" as const,
 }));
 
-export const strategicPartnersA: Partner[] = Array.from(
-  { length: 8 },
-  (_, i) => ({
-    id: `strategic-a-${i + 1}`,
-    name: `Socio estratégico ${i + 1}`,
-    tier: "estrategico" as const,
-  })
-);
-
-export const strategicPartnersB: Partner[] = Array.from(
-  { length: 8 },
-  (_, i) => ({
-    id: `strategic-b-${i + 1}`,
-    name: `Socio ${i + 1}`,
-    tier: "estrategico" as const,
-  })
-);
+export const strategicPartners: Partner[] = [
+  {
+    id: "chambrics",
+    name: "CHAMBRICS",
+    tier: "estrategico",
+    logoSrc: "/images/partners/chambrics.png",
+  },
+  {
+    id: "fhcc",
+    name: "Federation of Haitian Chambers of Commerce",
+    tier: "estrategico",
+    logoSrc: "/images/partners/fhcc.png",
+  },
+  {
+    id: "ccithc",
+    name: "Chambre de Commerce, d'Industrie et de Tourisme Haïti-Chili",
+    tier: "estrategico",
+    logoSrc: "/images/partners/ccithc.png",
+  },
+  {
+    id: "cciasm",
+    name: "Chambre de Commerce, d'Industrie et des Affaires Internationales de Saint-Marc",
+    tier: "estrategico",
+    logoSrc: "/images/partners/cciasm.png",
+  },
+  {
+    id: "usina-startup",
+    name: "Usina de Startup",
+    tier: "estrategico",
+    logoSrc: "/images/partners/usina-startup.png",
+  },
+];
 
 export const alliancePartnerLogos: Partner[] = Array.from(
   { length: 10 },

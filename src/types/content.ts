@@ -78,6 +78,7 @@ export type Partner = {
   name: string;
   tier: PartnerTier;
   logo?: SanityImageLike;
+  logoSrc?: string;
   website?: string;
 };
 

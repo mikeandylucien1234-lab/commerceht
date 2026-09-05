@@ -48,9 +48,8 @@ export default async function HomePage({
   ]);
 
   const departments = committees.filter((c) => c.type === "departamento");
-  const half = Math.ceil(partners.length / 2);
-  const rowA = partners.slice(0, half);
-  const rowB = partners.slice(half);
+  const rowA = partners.filter((p) => p.tier === "estrategico");
+  const rowB = partners.filter((p) => p.tier !== "estrategico");
 
   return (
     <div>

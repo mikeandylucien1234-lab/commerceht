@@ -71,8 +71,7 @@ export async function getPartners(): Promise<Partner[]> {
   return data && data.length > 0
     ? data
     : [
-        ...placeholder.strategicPartnersA,
-        ...placeholder.strategicPartnersB,
+        ...placeholder.strategicPartners,
         ...placeholder.platinumPartners,
         ...placeholder.ccbcPartners,
       ];

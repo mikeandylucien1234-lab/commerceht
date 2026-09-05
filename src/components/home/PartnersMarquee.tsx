@@ -24,7 +24,12 @@ function Row({ partners, direction }: { partners: Partner[]; direction: "left" |
             key={`${p.id}-${i}`}
             className="relative flex h-[90px] w-[160px] flex-none items-center justify-center rounded-[10px] bg-mist p-4"
           >
-            <ImagePlaceholder image={p.logo} label={p.name} />
+            <ImagePlaceholder
+              image={p.logo}
+              src={p.logoSrc}
+              label={p.name}
+              fit="contain"
+            />
           </div>
         ))}
       </div>

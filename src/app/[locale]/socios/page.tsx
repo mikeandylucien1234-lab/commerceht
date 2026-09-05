@@ -38,12 +38,28 @@ function SociosContent({
   const t = useTranslations("socios");
   const tNav = useTranslations("nav");
 
+  const estrategicos = partners.filter((p) => p.tier === "estrategico");
   const platinum = partners.filter((p) => p.tier === "platinum");
   const ccbc = partners.filter((p) => p.tier === "ccbc");
 
   return (
     <div>
       <PageHero kicker={tNav("socios")} title={tNav("nuestrosSocios")} />
+
+      {estrategicos.length > 0 && (
+        <section className="px-6 pt-16 md:px-14">
+          <div className="mb-2.5 text-xs font-semibold uppercase tracking-widest text-red">
+            {t("nivelPremium")}
+          </div>
+          <h2 className="mb-8 font-serif text-2xl font-bold text-navy md:text-3xl">
+            {t("estrategicos")}
+          </h2>
+          <LogoGrid
+            partners={estrategicos}
+            columns="grid-cols-2 sm:grid-cols-3 lg:grid-cols-5"
+          />
+        </section>
+      )}
 
       <section className="px-6 py-16 md:px-14">
         <div className="mb-2.5 text-xs font-semibold uppercase tracking-widest text-red">
