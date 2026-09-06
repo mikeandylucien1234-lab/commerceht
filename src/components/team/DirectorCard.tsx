@@ -8,12 +8,13 @@ export function DirectorCard({ member }: { member: BoardMember }) {
 
   return (
     <div className="overflow-hidden rounded-xl bg-white shadow-[0_4px_16px_rgba(11,45,92,0.08)]">
-      <div className="relative h-[180px]">
+      <div className="relative h-[220px] bg-mist">
         <ImagePlaceholder
-        image={member.photo}
-        src={member.photoSrc}
-        label={member.placeholder}
-      />
+          image={member.photo}
+          src={member.photoSrc}
+          label={member.placeholder}
+          fit="contain"
+        />
       </div>
       <div className="p-4.5">
         <div className="mb-1.5 text-xs font-semibold uppercase tracking-wide text-red">

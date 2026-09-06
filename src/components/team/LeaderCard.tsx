@@ -14,6 +14,7 @@ export function LeaderCard({ member, size = "lg" }: { member: BoardMember; size?
           image={member.photo}
           src={member.photoSrc}
           label={member.placeholder}
+          fit="contain"
         />
       </div>
       <div className="p-5.5">
