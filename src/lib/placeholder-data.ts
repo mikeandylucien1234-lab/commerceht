@@ -216,7 +216,7 @@ export const posts: Post[] = [
 
 export const newsCategories = [
   "Todos",
-  "CCBC",
+  "CCH",
   "Eventos",
   "Noticias",
   "Portada",

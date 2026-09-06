@@ -25,7 +25,7 @@ export const partner = defineType({
         list: [
           { title: "Socio estratégico", value: "estrategico" },
           { title: "Platinum", value: "platinum" },
-          { title: "CCBC", value: "ccbc" },
+          { title: "CCH", value: "ccbc" },
         ],
       },
       validation: (Rule) => Rule.required(),

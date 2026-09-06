@@ -24,7 +24,7 @@ export const post = defineType({
       type: "string",
       options: {
         list: [
-          "CCBC",
+          "CCH",
           "Eventos",
           "Noticias",
           "Portada",
