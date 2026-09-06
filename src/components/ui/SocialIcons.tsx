@@ -75,3 +75,15 @@ export function FacebookRoundIcon({ size = 19 }: IconProps) {
     </svg>
   );
 }
+
+export function LinkedInRoundIcon({ size = 19 }: IconProps) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24">
+      <rect x="1" y="1" width="22" height="22" rx="5" fill="#0A66C2" />
+      <path
+        d="M7.4 9.6h2.9v8.4H7.4zm1.45-4.1a1.68 1.68 0 1 1 0 3.36 1.68 1.68 0 0 1 0-3.36zM12 9.6h2.78v1.15h.04c.39-.73 1.34-1.5 2.76-1.5 2.95 0 3.5 1.9 3.5 4.4v4.35h-2.9v-3.86c0-.92 0-2.1-1.28-2.1s-1.48 1-1.48 2.03v3.93H12z"
+        fill="#fff"
+      />
+    </svg>
+  );
+}

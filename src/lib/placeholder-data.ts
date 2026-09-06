@@ -42,7 +42,7 @@ export const siteSettings: SiteSettings = {
   socialLinks: {
     facebook: "https://www.facebook.com/share/1BuNjHRusX/",
     instagram: "https://www.instagram.com/camarachh",
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/camara-chileno-haitiana/",
     tiktok: "https://www.tiktok.com/@camarachh?is_from_webapp=1&sender_device=pc",
   },
   socialHandle: "@camarachh",
@@ -587,9 +587,9 @@ export const socialPosts = [
   { id: 1, platform: "instagram" as const },
   { id: 2, platform: "tiktok" as const },
   { id: 3, platform: "facebook" as const },
-  { id: 4, platform: "instagram" as const },
-  { id: 5, platform: "tiktok" as const },
-  { id: 6, platform: "facebook" as const },
-  { id: 7, platform: "instagram" as const },
-  { id: 8, platform: "tiktok" as const },
+  { id: 4, platform: "linkedin" as const },
+  { id: 5, platform: "instagram" as const },
+  { id: 6, platform: "tiktok" as const },
+  { id: 7, platform: "facebook" as const },
+  { id: 8, platform: "linkedin" as const },
 ];

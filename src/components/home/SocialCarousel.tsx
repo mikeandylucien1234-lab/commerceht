@@ -7,10 +7,19 @@ import {
   InstagramGradientIcon,
   FacebookRoundIcon,
   TikTokIcon,
+  LinkedInRoundIcon,
 } from "@/components/ui/SocialIcons";
 
-type SocialPost = { id: number; platform: "instagram" | "tiktok" | "facebook" };
-type SocialLinks = { facebook?: string; instagram?: string; tiktok?: string };
+type SocialPost = {
+  id: number;
+  platform: "instagram" | "tiktok" | "facebook" | "linkedin";
+};
+type SocialLinks = {
+  facebook?: string;
+  instagram?: string;
+  tiktok?: string;
+  linkedin?: string;
+};
 
 const CARD_STEP = 284;
 const VISIBLE_COUNT = 4;
@@ -19,6 +28,7 @@ const BADGE_SRC: Record<SocialPost["platform"], string> = {
   facebook: "/images/social/facebook-badge.png",
   instagram: "/images/social/instagram-badge.png",
   tiktok: "/images/social/tiktok-badge.png",
+  linkedin: "/images/social/linkedin-badge.png",
 };
 
 export function SocialCarousel({
@@ -89,6 +99,7 @@ export function SocialCarousel({
                       )}
                       {post.platform === "tiktok" && <TikTokIcon size={18} />}
                       {post.platform === "facebook" && <FacebookRoundIcon />}
+                      {post.platform === "linkedin" && <LinkedInRoundIcon />}
                     </div>
                   </div>
                   <div className="border-t border-navy/10 px-4 py-3 text-center text-sm font-semibold text-navy">
