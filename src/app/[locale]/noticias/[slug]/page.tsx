@@ -36,11 +36,12 @@ function ArticleContent({ post }: { post: Post }) {
 
   return (
     <article>
-      <div className="relative h-[280px] md:h-[380px]">
+      <div className="relative h-[280px] bg-mist md:h-[380px]">
         <ImagePlaceholder
           image={post.image}
           src={post.imageSrc}
           label={post.placeholder}
+          fit="contain"
         />
         <div className="absolute inset-0 bg-navy/35" />
         <div className="absolute inset-0 flex flex-col items-start justify-end px-6 pb-10 md:px-14">

@@ -8,11 +8,12 @@ export function ArticleCard({ post }: { post: Post }) {
 
   return (
     <div className="overflow-hidden rounded-xl bg-white shadow-[0_4px_16px_rgba(11,45,92,0.08)]">
-      <div className="relative h-[170px]">
+      <div className="relative h-[170px] bg-mist">
         <ImagePlaceholder
           image={post.image}
           src={post.imageSrc}
           label={post.placeholder}
+          fit="contain"
         />
       </div>
       <div className="p-5">

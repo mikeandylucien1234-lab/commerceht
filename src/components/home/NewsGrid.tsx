@@ -15,11 +15,12 @@ export function NewsGrid({ posts }: { posts: Post[] }) {
       <div className="grid grid-cols-1 gap-9 sm:grid-cols-2 lg:grid-cols-3">
         {posts.slice(0, 6).map((post) => (
           <div key={post.id}>
-            <div className="relative h-[210px] overflow-hidden rounded-2xl border-[3px] border-red shadow-[0_0_0_6px_rgba(214,40,40,0.12)]">
+            <div className="relative h-[210px] overflow-hidden rounded-2xl border-[3px] border-red bg-mist shadow-[0_0_0_6px_rgba(214,40,40,0.12)]">
               <ImagePlaceholder
                 image={post.image}
                 src={post.imageSrc}
                 label={post.placeholder}
+                fit="contain"
               />
             </div>
             <div className="mt-4 font-serif text-lg font-bold leading-snug text-navy">
