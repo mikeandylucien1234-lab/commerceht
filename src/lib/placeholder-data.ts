@@ -43,7 +43,7 @@ export const siteSettings: SiteSettings = {
     facebook: "https://www.facebook.com/share/1BuNjHRusX/",
     instagram: "https://www.instagram.com/camarachh",
     linkedin: "#",
-    tiktok: "#",
+    tiktok: "https://www.tiktok.com/@camarachh?is_from_webapp=1&sender_device=pc",
   },
   socialHandle: "@camarachh",
 };
@@ -374,6 +374,12 @@ export const ccbcPartners: Partner[] = [
     name: "Uiihappy",
     tier: "ccbc",
     logoSrc: "/images/partners/uiihappy.png",
+  },
+  {
+    id: "transparence-travel",
+    name: "Transparence Travel Multi-Servicios",
+    tier: "ccbc",
+    logoSrc: "/images/partners/transparence-travel.png",
   },
 ];
 
