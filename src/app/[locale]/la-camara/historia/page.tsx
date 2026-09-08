@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { useTranslations, useLocale } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { PageHero } from "@/components/ui/PageHero";
-import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
 import { historyMilestones } from "@/lib/placeholder-data";
 import { t } from "@/types/content";
 import type { Locale } from "@/types/content";
@@ -47,23 +46,6 @@ export default function HistoriaPage() {
               </p>
             </div>
           ))}
-        </div>
-      </section>
-
-      <section className="bg-gradient-to-br from-navy to-navy-dark px-6 py-16 md:px-14">
-        <div className="mx-auto grid max-w-5xl grid-cols-1 items-center gap-14 lg:grid-cols-2">
-          <div>
-            <div className="mb-3 text-xs font-semibold uppercase tracking-widest text-red">
-              {tr("premioLabel")}
-            </div>
-            <h2 className="mb-4.5 font-serif text-2xl font-bold leading-tight text-white md:text-3xl">
-              {tr("premioTitle")}
-            </h2>
-            <p className="leading-relaxed text-line">{tr("premioDesc")}</p>
-          </div>
-          <div className="relative h-[280px] overflow-hidden rounded-xl">
-            <ImagePlaceholder label="Photo — ceremonia del premio" />
-          </div>
         </div>
       </section>
     </div>
