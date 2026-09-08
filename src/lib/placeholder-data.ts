@@ -513,27 +513,19 @@ export const orgLinks: OrgLink[] = [
 
 export const historyMilestones: { year: string; title: string; desc: { es: string; fr: string } }[] = [
   {
-    year: "1975",
+    year: "2023",
     title: "Fundación",
     desc: {
-      es: "Creación de la asociación por un grupo de empresarios visionarios que buscaban estrechar los vínculos comerciales entre Chile y Haití.",
-      fr: "Création de l'association par un groupe d'entrepreneurs visionnaires cherchant à resserrer les liens commerciaux entre le Chili et Haïti.",
+      es: "Creación de la Cámara Chileno-Haitiana de Comercio, Turismo e Industria por un grupo de empresarios visionarios que buscaban estrechar los vínculos comerciales entre Chile y Haití.",
+      fr: "Création de la Chambre de Commerce Chilo-Haïtienne par un groupe d'entrepreneurs visionnaires cherchant à resserrer les liens commerciaux entre le Chili et Haïti.",
     },
   },
   {
-    year: "2015",
-    title: "40 años",
+    year: "2026",
+    title: "3 años",
     desc: {
-      es: "La Cámara celebra cuatro décadas de trabajo, consolidada como referente en la facilitación del comercio bilateral.",
-      fr: "La Chambre célèbre quatre décennies de travail, consolidée comme référence dans la facilitation du commerce bilatéral.",
-    },
-  },
-  {
-    year: "2025",
-    title: "50 años",
-    desc: {
-      es: "Medio siglo de historia, celebrado junto a socios y autoridades de ambos países, y a instituciones aliadas.",
-      fr: "Un demi-siècle d'histoire, célébré avec les membres et autorités des deux pays, et les institutions alliées.",
+      es: "Tres años impulsando el comercio bilateral, conectando empresarios, instituciones y oportunidades entre Chile y Haití.",
+      fr: "Trois ans à dynamiser le commerce bilatéral, en connectant entrepreneurs, institutions et opportunités entre le Chili et Haïti.",
     },
   },
 ];
